@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>webVR</title>
+	<link rel="stylesheet" type="text/css" href="app/css/main.css">
+	<script type="text/javascript" src = "node_modules/aframe/dist/aframe.js"></script>
+</head>
+<body>
+<a-scene>
+    <a-assets>
+	    <a-mixin id = "cube" geometry = "primitive: box; width: 1; height:1; depth:1;" material = "color: #953163;" ></a-mixin>
+	    <a-mixin id = "rotate" attribute="rotation" begin="click" repeat="0" to="0 360 0"></a-mixin>
+	    <a-mixin id = "sphere" geometry = "primitive:sphere; radius: 1;" color = "#000"></a-mixin>
+	    <a-mixin id = "paper" geometry = "primitive: box; height:1; width:1; depth: 0.1;" material = "color: #953163;" ></a-mixin>
+	    <a-mixin id = "circle"  geometry="primitive: circle; radius: 0.3;" rotation = "90 0 0" material = "color: #2d3e52;"></a-mixin>
+	    <a-mixin id = "cylinder" geometry="primitive: cylinder; height: 1.6; radius: 0.5;" material = "side: double; color:#3ab75c;" position = "0 0.1 0"></a-mixin>
+	    <a-mixin id = "cylinder-top"  geometry="primitive: cylinder; height: 0.5; radius: 0.6;" material = "side: double; color:#3ab75c;"  position = "0 1 0"></a-mixin>
+	    </a-mixin>
+ 	 </a-assets>
+
+		<a-plane color="#CCC" height="20" width="20" rotation="-90 0 0"></a-plane>
+<!-- 	  <a-entity mixin = "cube" position = "-3.5 1 -4">
+	  	  <a-animation attribute="rotation" begin="click" repeat="0" to="0 360 0"></a-animation>
+	  </a-entity> -->
+
+
+ <a-camera>
+    <a-cursor id="cursor">
+      <a-animation begin="click" easing="ease-in" attribute="scale"
+                   fill="backwards" from="0.1 0.1 0.1" to="1 1 1" dur="150"></a-animation>
+      <a-animation begin="cursor-fusing" easing="ease-in" attribute="scale"
+                   from="1 1 1" to="0.1 0.1 0.1" dur="1500"></a-animation>
+    </a-cursor> 
+</a-camera>
+</a-scene>
+
+</body>
+
+	<script type="text/javascript" src = "app/js/assets.js"></script>
+	<script type="text/javascript" src = "app/js/assets.js"></script>
+	<script type="text/javascript" src = "node_modules/angular/angular.js"></script>
+	<script type="text/javascript" src = "app/app.js"></script>
+	<script type="text/javascript" src = "app/js/controller.js"></script>
+	<script type="text/javascript" src = "app/js/services.js"></script>
+	<script type="text/javascript" src = "app/js/directives.js"></script>
+</html>
