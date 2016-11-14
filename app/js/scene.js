@@ -1,11 +1,30 @@
-import usedBlock from 'assets';
+cloudItemBody.appendChild(cloudEyeRight);
+cloudItemBody.appendChild(cloudEyeLeft);
 
-// pipeContainer.appendChild(pipeTop);
-// pipeContainer.appendChild(pipeBottom);
+cloudContainer.appendChild(cloudItemBody);
+cloudContainer.appendChild(cloudItemSideRight);
+cloudContainer.appendChild(cloudItemSideLeft);
+scene.appendChild(cloudContainer);
 
-// scene.appendChild(pipeContainer);
-// scene.appendChild(mysteryBlock);
-// scene.appendChild(brickBlock);
-usedBlock();
+treeContainer.appendChild(treeTop);
+treeContainer.appendChild(treeTrunk);
+scene.appendChild(treeContainer);
+
+bulletBill.appendChild(bbHead);
+bulletBill.appendChild(bbHeadCylinder);
+bulletBill.appendChild(bbMid);
+bulletBill.appendChild(bbBack);
+scene.appendChild(bulletBill);
+
+pipeContainer.appendChild(pipeTop);
+pipeContainer.appendChild(pipeBottom);
+
+scene.appendChild(skyDay);
+scene.appendChild(grass);
+scene.appendChild(dirt);
+scene.appendChild(pipeContainer);
+scene.appendChild(mysteryBlock);
+scene.appendChild(brickBlock);
 scene.appendChild(exclamBlock);
-// scene.appendChild(usedBlock);
+scene.appendChild(usedBlock);
+scene.appendChild(coin);
