@@ -72,25 +72,25 @@ dirt.setAttribute('repeat', '8 10');
 
 var mysteryBlock = document.createElement('a-entity');
 mysteryBlock.setAttribute('mixin', 'cube');
-mysteryBlock.setAttribute('rotation', '0 5 0');
+// mysteryBlock.setAttribute('rotation', '0 5 0');
 mysteryBlock.setAttribute('material', 'color: #ffce55; src: url(' + img.mysteryBlock +')');
 mysteryBlock.setAttribute('position', '-3 3 -5');
 
 var brickBlock = document.createElement('a-entity');
 brickBlock.setAttribute('mixin', 'cube');
-brickBlock.setAttribute('rotation', '0 5 0');
+// brickBlock.setAttribute('rotation', '0 5 0');
 brickBlock.setAttribute('material', 'color: #ffce55; src: url(' + img.brickBlock +')');
 brickBlock.setAttribute('position', '-4 3 -5');
 
 var exclamBlock = document.createElement('a-entity');
 exclamBlock.setAttribute('mixin', 'cube');
-exclamBlock.setAttribute('rotation', '0 5 0');
+// exclamBlock.setAttribute('rotation', '0 5 0');
 exclamBlock.setAttribute('material', 'color: #ffce55; src: url(' + img.exclamBlock +')');
 exclamBlock.setAttribute('position', '-2 3 -5');
 
 var usedBlock = document.createElement('a-entity');
 usedBlock.setAttribute('mixin', 'cube');
-usedBlock.setAttribute('rotation', '0 5 0');
+// usedBlock.setAttribute('rotation', '0 5 0');
 usedBlock.setAttribute('material', 'color: #ffce55; src: url(' + img.usedBlock +')');
 usedBlock.setAttribute('position', '-1 3 -5');
 
