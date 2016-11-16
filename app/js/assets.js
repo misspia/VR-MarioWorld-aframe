@@ -26,7 +26,6 @@ var skyDay = document.createElement('a-sky');
 skyDay.setAttribute('color', color.lblue); 
 
 var cloudContainer = document.createElement('a-entity');
-cloudContainer.setAttribute('position', '6 5 -7');
 
 var cloudItemBody = document.createElement('a-entity');
 cloudItemBody.setAttribute('geometry', 'primitive: sphere; radius: 1;' );
@@ -72,31 +71,27 @@ dirt.setAttribute('repeat', '8 10');
 
 var mysteryBlock = document.createElement('a-entity');
 mysteryBlock.setAttribute('mixin', 'cube');
-// mysteryBlock.setAttribute('rotation', '0 5 0');
 mysteryBlock.setAttribute('material', 'color: #ffce55; src: url(' + img.mysteryBlock +')');
-mysteryBlock.setAttribute('position', '-3 3 -5');
+
 
 var brickBlock = document.createElement('a-entity');
 brickBlock.setAttribute('mixin', 'cube');
-// brickBlock.setAttribute('rotation', '0 5 0');
 brickBlock.setAttribute('material', 'color: #ffce55; src: url(' + img.brickBlock +')');
-brickBlock.setAttribute('position', '-4 3 -5');
+
 
 var exclamBlock = document.createElement('a-entity');
 exclamBlock.setAttribute('mixin', 'cube');
-// exclamBlock.setAttribute('rotation', '0 5 0');
 exclamBlock.setAttribute('material', 'color: #ffce55; src: url(' + img.exclamBlock +')');
-exclamBlock.setAttribute('position', '-2 3 -5');
+
 
 var usedBlock = document.createElement('a-entity');
 usedBlock.setAttribute('mixin', 'cube');
-// usedBlock.setAttribute('rotation', '0 5 0');
 usedBlock.setAttribute('material', 'color: #ffce55; src: url(' + img.usedBlock +')');
-usedBlock.setAttribute('position', '-1 3 -5');
+
 
 var pipeContainer = document.createElement('a-entity');
 pipeContainer.setAttribute('position', '3.5 0.1 -4');
-pipeContainer.setAttribute('rotation', '0 40 0');
+
 
 var pipeBottom = document.createElement('a-entity');
 pipeBottom.setAttribute('mixin', 'cylinder');
@@ -107,7 +102,7 @@ pipeTop.setAttribute('mixin', 'cylinder-top');
 pipeTop.setAttribute('material', 'src: url(' + img.pipe + ')')
 
 var bulletBill = document.createElement('a-entity');
-bulletBill.setAttribute('position', '0 6 -7');
+
 
 var bbHead = document.createElement('a-sphere');
 bbHead.setAttribute('position', '-1 0 0');
@@ -132,7 +127,7 @@ bbBack.setAttribute('rotation', '0 0 -90');
 bbBack.setAttribute('position', '0 0 0');
 
 var treeContainer = document.createElement('a-entity');
-treeContainer.setAttribute('position', '2 0 -7');
+
 
 var treeTrunk = document.createElement('a-entity');
 treeTrunk.setAttribute('geometry', 'primitive: cylinder; height:2.1; radius: 0.15;');
@@ -148,7 +143,7 @@ var coin = document.createElement('a-entity');
 coin.setAttribute('geometry', 'primitive: cylinder; height:0.1; radius:0.5;' );
 coin.setAttribute('material', 'color: ' + color.ylw + '; side: double; src: url(' + img.coinTexture + ');');
 coin.setAttribute('rotation', '-90 0 0');
-coin.setAttribute('position', '0 1 -2');
+
 
 
 
