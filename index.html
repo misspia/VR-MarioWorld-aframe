@@ -7,7 +7,7 @@
 	<script type="text/javascript" src = "node_modules/aframe/dist/aframe.js"></script>
 </head>
 <body>
-<a-scene >
+<a-scene inspector>
     <a-assets>
 	    <a-mixin id = "cube" geometry = "primitive: box; width: 1; height:1; depth:1;" material = "color: #953163;" ></a-mixin>
 	    <a-mixin id = "sphere" geometry = "primitive:sphere; radius: 5;"></a-mixin>
@@ -28,10 +28,10 @@
     </a-cursor> 
 </a-camera>
 </a-scene>
-<!-- <script type="text/javascript" src = 'node_modules/aframe-inspector/dist/aframe-inspector.js'></script> -->
+<script type="text/javascript" src = 'node_modules/aframe-inspector/dist/aframe-inspector.js'></script>
 
 </body>
-
+	<script type="text/javascript" src = "app/js/variables.js"></script>
 	<script type="text/javascript" src = "app/js/assets.js"></script>
 	<script type="text/javascript" src = "app/js/animations.js"></script>
 	<script type="text/javascript" src = "app/js/scene.js"></script>

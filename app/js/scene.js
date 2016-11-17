@@ -13,10 +13,6 @@ coin.setAttribute('position', '0 1 -2');
 
 
 
-
-
-
-
 cloudItemBody.appendChild(cloudEyeRight);
 cloudItemBody.appendChild(cloudEyeLeft);
 
@@ -46,7 +42,7 @@ scene.appendChild(dirt);
 scene.appendChild(pipeContainer);
 scene.appendChild(mysteryBlock);
 
-// brickBlock.appendChild(cloudAnimation);
+brickBlock.appendChild(blockAnimation);
 
 scene.appendChild(brickBlock);
 scene.appendChild(exclamBlock);
